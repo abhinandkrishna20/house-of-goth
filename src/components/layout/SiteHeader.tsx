@@ -1,6 +1,7 @@
 
 import BrandLogo from "@/src/ui/BrandLogo";
 import Link from "next/link";
+import MobileNav from "./MobileNav";
 
 const navigation = [
   { label: "Discover", href: "/discover/history" },
@@ -27,7 +28,7 @@ export default function SiteHeader() {
             A GLOBAL HOME FOR GOTH CULTURE
           </span>
         </Link> */}
-        <BrandLogo variant="horizontal" className="shrink-0" />
+        <BrandLogo />
 
         <nav
           aria-label="Main navigation"
@@ -50,6 +51,7 @@ export default function SiteHeader() {
         >
           Join Us
         </Link>
+         <MobileNav />
       </div>
     </header>
   );
