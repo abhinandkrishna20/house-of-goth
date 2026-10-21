@@ -2,7 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import BrandLogo from "@/src/ui/BrandLogo";
-import EditorialCard from "@/src/ui/EditorialCard";
+import EditorialCard from '@/src/ui/EditorialCard'
+
 
 const discoveries = [
   {
@@ -12,7 +13,7 @@ const discoveries = [
     description:
       "Explore the roots, ideas, art and history behind the Goth subculture.",
     href: "/discover/history",
-    image: "/images/culture/gothic-architecture.jpg",
+    image: "/images/history/gothic-history.jfif",
     imageAlt: "Gothic architectural details",
   },
   {
@@ -32,7 +33,7 @@ const discoveries = [
     description:
       "Explore dark fashion, personal expression and alternative design.",
     href: "/style",
-    image: "/images/style/gothic-style.jpg",
+    image: "/images/style/gothic-style.jfif",
     imageAlt: "Dark fashion and accessories",
   },
 ];
