@@ -1,4 +1,5 @@
 
+import BrandLogo from "@/src/ui/BrandLogo";
 import Link from "next/link";
 
 const navigation = [
@@ -14,7 +15,7 @@ export default function SiteHeader() {
   return (
     <header className="border-b border-[var(--color-border)]">
       <div className="page-container flex min-h-20 items-center justify-between gap-6">
-        <Link
+        {/* <Link
           href="/"
           aria-label="House of Goth home"
           className="shrink-0"
@@ -25,7 +26,8 @@ export default function SiteHeader() {
           <span className="mt-1 block text-[9px] tracking-[0.2em] text-[var(--color-muted)]">
             A GLOBAL HOME FOR GOTH CULTURE
           </span>
-        </Link>
+        </Link> */}
+        <BrandLogo variant="horizontal" className="shrink-0" />
 
         <nav
           aria-label="Main navigation"

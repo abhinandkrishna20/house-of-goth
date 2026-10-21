@@ -1,6 +1,7 @@
 
 "use client";
 import Link from "next/link";
+import BrandLogo from "../ui/BrandLogo";
 
 const features = [
   {
@@ -85,7 +86,7 @@ export default function HomePage() {
               className="absolute inset-x-12 top-12 bottom-12 rounded-t-full border border-[var(--color-antique)]/40"
             />
 
-            <div className="relative px-6 text-center">
+            {/* <div className="relative px-6 text-center">
               <span className="font-editorial text-8xl text-[var(--color-antique)]">
                 ♜
               </span>
@@ -98,7 +99,21 @@ export default function HomePage() {
               <p className="mt-5 text-xs text-[var(--color-muted)]">
                 Official emblem in development
               </p>
-            </div>
+            </div> */}
+
+            
+<div className="relative mx-auto flex aspect-[4/5] w-full max-w-sm items-center justify-center overflow-hidden border border-[var(--color-antique)]/25 bg-[radial-gradient(ellipse_at_50%_38%,rgba(83,30,50,0.45),transparent_55%),linear-gradient(160deg,#20151f,#100e13_65%)]">
+  <div
+    aria-hidden="true"
+    className="absolute inset-5 border border-[var(--color-antique)]/20"
+  />
+
+  <BrandLogo
+    variant="crest"
+    className="relative z-10 h-auto w-[75%] drop-shadow-[0_0_24px_rgba(232,215,183,0.08)]"
+  />
+</div>
+
           </div>
         </div>
       </section>
