@@ -85,3 +85,24 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* House of Goth — Editorial refinements */
+
+::selection {
+  background: #70465d;
+  color: #f0e7e4;
+}
+
+img {
+  max-width: 100%;
+}
+
+article a:focus-visible {
+  outline-offset: 5px;
+}
+
+@media (max-width: 640px) {
+  .page-container {
+    width: min(100% - 32px, 1240px);
+  }
+}

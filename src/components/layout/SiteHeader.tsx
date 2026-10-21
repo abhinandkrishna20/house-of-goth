@@ -14,25 +14,13 @@ const navigation = [
 
 export default function SiteHeader() {
   return (
-    <header className="border-b border-[var(--color-border)]">
-      <div className="page-container flex min-h-20 items-center justify-between gap-6">
-        {/* <Link
-          href="/"
-          aria-label="House of Goth home"
-          className="shrink-0"
-        >
-          <span className="font-editorial text-2xl tracking-[0.08em] sm:text-3xl">
-            HOUSE <span className="text-[var(--color-antique)]">OF</span> GOTH
-          </span>
-          <span className="mt-1 block text-[9px] tracking-[0.2em] text-[var(--color-muted)]">
-            A GLOBAL HOME FOR GOTH CULTURE
-          </span>
-        </Link> */}
+    <header className="relative z-30 border-b border-[var(--color-border)] bg-[var(--color-midnight)]">
+      <div className="page-container flex min-h-20 items-center justify-between gap-4 py-3">
         <BrandLogo />
 
         <nav
           aria-label="Main navigation"
-          className="hidden items-center gap-6 lg:flex"
+          className="hidden items-center gap-5 lg:flex"
         >
           {navigation.map((item) => (
             <Link
@@ -45,13 +33,15 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <Link
-          href="/community"
-          className="shrink-0 border border-[var(--color-antique)]/50 px-3 py-2 text-xs tracking-wide transition-colors hover:bg-[var(--color-burgundy)] sm:px-4"
-        >
-          Join Us
-        </Link>
-         <MobileNav />
+        <div className="flex items-center gap-3">
+          <Link
+            href="/community"
+            className="hidden border border-[var(--color-antique)]/50 px-4 py-2 text-xs tracking-wide transition-colors hover:bg-[var(--color-burgundy)] sm:inline-flex"
+          >
+            Join Us
+          </Link>
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
